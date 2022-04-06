@@ -66,7 +66,7 @@ export default function Search({session}) {
                         placeholder="What to listen?"
                     />
                 </div>
-                { searchResult.length &&
+                { searchResult.length > 0 &&
                 <div>
                     <h1 className="text-white text-xl font-semibold mb-6">Songs</h1>
                     <div className="flex overflow-x-scroll gap-x-5 scrollbar-hide ">
@@ -77,7 +77,7 @@ export default function Search({session}) {
                 </div>
                 }
 
-                {artist.length && 
+                {artist.length > 0 && 
                  <div className="mb-8">
                     <h1 className="text-white text-xl font-semibold mb-6">Artists</h1>
                     <div className="flex overflow-x-scroll gap-x-5 scrollbar-hide ">

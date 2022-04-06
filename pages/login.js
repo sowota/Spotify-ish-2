@@ -7,6 +7,7 @@ import Loading from "../components/Loader"
 export default function Login({providers}) {
 
     const {data:session, status} = useSession()
+    console.log(providers)
 
     const router = useRouter()
 
